@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #333;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 25px;
+}
+
+.container {
+  width: 85%;
+  max-width: 1500px;
+  margin: 0 auto;
+  /* align-items: center; */
+  vertical-align: middle;
+}
+
+.header {
+  background-color: #f77f00;
+  height: 65px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  /* align-items: center; */
+}
+
+.menu {
+  background-color: #003049;
+  height: 30px;
+  text-align: center;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 65px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.navegacao ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navegacao ul li {
+  display: inline-block;
+}
+
+.navegacao ul li a {
+  display: block;
+  margin-right: 135px;
+}
+
+#hamburguer-menu {
+  position: relative;
+  left: -205px;
+}
+
+.dropdown-menu {
+  background-color: #f77f00;
+  margin-top: -7px;
+  border: none;
+}
+
+.dropdown-menu.show {
+  position: relative;
+  position: absolute;
+  left: -175px;
+  top: 70px;
+}
+
+.separador1 {
+  position: fixed;
+  left: 98px;
+  height: 38px;
+  margin-top: 3px;
+  border-right: 2px solid white;
+}
+
+.logo-header {
+  position: fixed;
+  left: 110px;
+}
+
+.form-inline {
+  position: fixed;
+  right: 650px;
+}
+
+.form-control.mr-sm-2 {
+  width: 500px;
+}
+
+.carrinho {
+  position: fixed;
+  right: 95px;
+}
+
+.separador2 {
+  position: fixed;
+  right: 75px;
+  height: 38px;
+  margin-top: 3px;
+  border-right: 2px solid white;
+}
+
+.login {
+  position: fixed;
+  right: 20px;
+}
+
+.main {
+  padding: 115px;
+}
+
+.promocao {
+  background-color: #d62828;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #f77f00;
+  text-align: center;
+  height: 65px;
+}
+
+.footer-container {
+  margin: 10px;
+  display: inline-flex;
+  justify-content: space-between;
+}
