@@ -1,0 +1,164 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #333;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+}
+
+p{
+  margin-bottom: 25px;
+}
+
+.container{
+  width: 85%;
+  max-width: 1500px;
+  margin: 0 auto;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.header {
+  background-color: #F77F00;
+  height: 65px;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.header-container{
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.menu {
+  background-color: #003049;
+  height: 30px;
+  text-align: center;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 65px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.navegacao ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navegacao ul li{
+  display: inline-block;
+}
+
+.navegacao ul li a{
+  display: block;
+  margin-right: 135px;
+}
+
+.dropdown-menu {
+  background-color: #F77F00;
+
+  margin-top: -7px;
+  border: none;
+}
+
+.main{
+  padding: 115px;
+}
+
+.promocao{
+  background-color: #D62828;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #F77F00;
+  text-align: center;
+}
+
+.footer-container{
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.imgLogo{
+  width: 45px;
+}
+
+/* Parte de responsividade,  320px */
+
+/* Header */
+@media only screen and (max-width: 325px) {
+  .img-fluid{
+    max-width: 100%;
+    height: 30px;
+    width: 30px;
+    margin-left: -10px;
+    /* z-index: 1; */
+    /* position: relative; */
+  }
+
+  #searchText{
+    margin-top: -50px;
+    width: 180px;
+    margin-left: 30px;
+    /* visibility: hidden; */
+  }
+
+  .imgHidden{
+    visibility: hidden;
+  }
+
+  #search{
+    position: relative;
+    margin-left: 220px;
+    top: -55px;
+  }
+
+  #menuLateral{
+    /* position: inherit; */
+    /* margin-left: -40px; */
+    width: 40px;
+    /* visibility: hidden; */
+  }
+
+  .dropdown-menu {
+    margin-top: -110px;
+  }
+
+  /* Footer */
+  .imgLogo{
+    width: 25px;
+    overflow-wrap: break-word;
+  }
+
+  .address{
+    margin-top: 15px;
+    /* font-size: small; */
+  }
+
+  .facebook{
+    display: grid;
+  }
+  
+}
+
+
+
