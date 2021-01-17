@@ -38,37 +38,6 @@ p {
   /* align-items: center; */
 }
 
-.menu {
-  background-color: #003049;
-  height: 30px;
-  text-align: center;
-
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 65px;
-}
-
-.menu a {
-  text-decoration: none;
-  color: white;
-}
-
-.navegacao ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.navegacao ul li {
-  display: inline-block;
-}
-
-.navegacao ul li a {
-  display: block;
-  margin-right: 135px;
-}
-
 #hamburguer-menu {
   position: relative;
   left: -205px;
@@ -106,7 +75,14 @@ p {
 }
 
 .form-control.mr-sm-2 {
+  position: fixed;
   width: 500px;
+  left: 380px;
+}
+
+#search {
+  position: fixed;
+  right: 350px;
 }
 
 .carrinho {
@@ -125,6 +101,37 @@ p {
 .login {
   position: fixed;
   right: 20px;
+}
+
+#sub-menu {
+  background-color: #003049;
+  height: 30px;
+  text-align: center;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 65px;
+}
+
+#sub-menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.navegacao ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navegacao ul li {
+  display: inline-block;
+}
+
+.navegacao ul li a {
+  display: block;
+  margin-right: 135px;
 }
 
 .main {
