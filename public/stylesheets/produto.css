@@ -1,4 +1,10 @@
-.xbox{
-    width: 450px;
+.tituloProduto{
+  text-align: center;
+  /* font-size: 25px; */
+}
+
+.imagemProduto{
+    /* width: 450px; */
+    align-items: center;
     border-style: groove;
   }
