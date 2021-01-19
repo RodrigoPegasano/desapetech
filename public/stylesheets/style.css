@@ -26,7 +26,7 @@ p {
   left: 0;
   top: 0;
   right: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .container {
@@ -115,6 +115,7 @@ p {
   height: 30px;
   text-align: center;
   position: fixed;
+  z-index: 2;
   left: 0;
   right: 0;
   top: 65px;
@@ -130,6 +131,15 @@ p {
   height: 20px;
   margin-top: 5px;
   border-right: 2px solid white;
+}
+
+/* Carousel */
+.carousel-inner {
+  height: 350px;
+}
+
+#carouselExampleIndicators {
+  z-index: 1;
 }
 
 .main {
