@@ -1,280 +1,114 @@
-<!DOCTYPE html>
+<%- include('partials/header'); -%>
 
-<html lang="pt-br">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-    <script
-      defer
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    ></script>
-    <script
-      defer
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
-    ></script>
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
-      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
-      crossorigin="anonymous"
-    ></script>
-    <title>DesapeTech</title>
-  </head>
-
-  <body>
-    <header class="header">
-      <div id="topo" class="row">
-        <div class="container header-container col-6 col-md-12">
-          <nav class="navbar navbar-expand-lg">
-            <button
-              id="hamburguer-menu"
-              class="btn btn-link"
-              type="button"
-              id="dropdownMenuButton"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <img
-                src="/images/Menu Hamburguer.png"
-                class="img-fluid"
-                width="40"
-              />
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" href="#">Smartphones</a></li>
-              <li><a class="dropdown-item" href="#">Notebooks</a></li>
-              <li><a class="dropdown-item" href="#">Videogames</a></li>
-              <li><a class="dropdown-item" href="#">Televisão</a></li>
-              <li><a class="dropdown-item" href="#">Som</a></li>
-              <li><a class="dropdown-item" href="#">Eletrodomésticos</a></li>
-            </ul>
-
-            <div class="separador1"></div>
-
-            <a class="logo-header" href="#">
-              <img src="/images/Logo - Sem fundo.png" width="65" />
-            </a>
-
-            <form class="form-inline">
-              <input
-                class="form-control mr-sm-2"
-                type="search"
-                placeholder="Digite o produto que deseja procurar..."
-                aria-label="Search"
-              />
-              <button
-                id="search"
-                class="btn btn-outline-light my-2 my-sm-0"
-                type="submit"
-              >
-                <img src="/images/Pesquisa - Sem fundo 1.png" width="30" />
-              </button>
-            </form>
-
-            <a class="carrinho" href="#">
-              <img src="images/carrinho.png" width="40" />
-            </a>
-
-            <div class="separador2"></div>
-
-            <a class="login" href="#">
-              <img src="images/log in.png" width="45" />
-            </a>
-          </nav>
-        </div>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/carousel-iphone.jpg" class="d-block w-100">
       </div>
-
-      <div id="sub-menu">
-        <nav class="nav nav-pills nav-justified">
-          <a class="nav-item nav-link" href="#">SMARTPHONE</a>
-          <div class="separador-submenu"></div>
-          <a class="nav-item nav-link" href="#">NOTEBOOK</a>
-          <div class="separador-submenu"></div>
-          <a class="nav-item nav-link" href="#">ELETRODOMÉSTICOS</a>
-          <div class="separador-submenu"></div>
-          <a class="nav-item nav-link" href="#">VIDEOGAMES</a>
-          <div class="separador-submenu"></div>
-          <a class="nav-item-last nav-link" href="#">TELEVISÃO</a>
-        </nav>
+      <div class="carousel-item">
+        <img src="images/carousel-note.jpg" class="d-block w-100">
       </div>
-    </header>
-
-    <main class="main">
-
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/carousel-iphone.jpg" class="d-block w-100">
-          </div>
-          <div class="carousel-item">
-            <img src="images/carousel-note.jpg" class="d-block w-100">
-          </div>
-          <div class="carousel-item">
-            <img src="images/carousel-som.jpg" class="d-block w-100">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden"></span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden"></span>
-        </a>
-      </div><br>
-
-      <h1 class="promocao">Promoções</h1><br>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iure
-          accusantium minima exercitationem? Qui eveniet placeat unde dolores
-          porro iure inventore quasi cum saepe illum recusandae, quaerat dolor
-          officiis esse.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iure
-          accusantium minima exercitationem? Qui eveniet placeat unde dolores
-          porro iure inventore quasi cum saepe illum recusandae, quaerat dolor
-          officiis esse.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iure
-          accusantium minima exercitationem? Qui eveniet placeat unde dolores
-          porro iure inventore quasi cum saepe illum recusandae, quaerat dolor
-          officiis esse.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iure
-          accusantium minima exercitationem? Qui eveniet placeat unde dolores
-          porro iure inventore quasi cum saepe illum recusandae, quaerat dolor
-          officiis esse.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iure
-          accusantium minima exercitationem? Qui eveniet placeat unde dolores
-          porro iure inventore quasi cum saepe illum recusandae, quaerat dolor
-          officiis esse.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iure
-          accusantium minima exercitationem? Qui eveniet placeat unde dolores
-          porro iure inventore quasi cum saepe illum recusandae, quaerat dolor
-          officiis esse.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iure
-          accusantium minima exercitationem? Qui eveniet placeat unde dolores
-          porro iure inventore quasi cum saepe illum recusandae, quaerat dolor
-          officiis esse.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iure
-          accusantium minima exercitationem? Qui eveniet placeat unde dolores
-          porro iure inventore quasi cum saepe illum recusandae, quaerat dolor
-          officiis esse.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iure
-          accusantium minima exercitationem? Qui eveniet placeat unde dolores
-          porro iure inventore quasi cum saepe illum recusandae, quaerat dolor
-          officiis esse.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iure
-          accusantium minima exercitationem? Qui eveniet placeat unde dolores
-          porro iure inventore quasi cum saepe illum recusandae, quaerat dolor
-          officiis esse.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iure
-          accusantium minima exercitationem? Qui eveniet placeat unde dolores
-          porro iure inventore quasi cum saepe illum recusandae, quaerat dolor
-          officiis esse.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iure
-          accusantium minima exercitationem? Qui eveniet placeat unde dolores
-          porro iure inventore quasi cum saepe illum recusandae, quaerat dolor
-          officiis esse.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iure
-          accusantium minima exercitationem? Qui eveniet placeat unde dolores
-          porro iure inventore quasi cum saepe illum recusandae, quaerat dolor
-          officiis esse.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iure
-          accusantium minima exercitationem? Qui eveniet placeat unde dolores
-          porro iure inventore quasi cum saepe illum recusandae, quaerat dolor
-          officiis esse.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iure
-          accusantium minima exercitationem? Qui eveniet placeat unde dolores
-          porro iure inventore quasi cum saepe illum recusandae, quaerat dolor
-          officiis esse.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iure
-          accusantium minima exercitationem? Qui eveniet placeat unde dolores
-          porro iure inventore quasi cum saepe illum recusandae, quaerat dolor
-          officiis esse.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iure
-          accusantium minima exercitationem? Qui eveniet placeat unde dolores
-          porro iure inventore quasi cum saepe illum recusandae, quaerat dolor
-          officiis esse.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iure
-          accusantium minima exercitationem? Qui eveniet placeat unde dolores
-          porro iure inventore quasi cum saepe illum recusandae, quaerat dolor
-          officiis esse.
-        </p>
+      <div class="carousel-item">
+        <img src="images/carousel-som.jpg" class="d-block w-100">
       </div>
-    </main>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden"></span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden"></span>
+    </a>
+  </div><br>
 
-    <footer class="footer">
-      <div class="container footer-container">
-        <a class="logo" href="#"
-          ><img src="images/Logo - Sem fundo.png" width="65"
-        /></a>
+  <h1 class="promocao">Promoções</h1><br>
 
-        <p>
-          Av. Paulista 1439, São Paulo <br />
-          Brasil
-        </p>
 
-        <a class="facebook" href="#"
-          ><img src="images/facebook logo.png" width="45" /><img
-            src="images/email logo.png"
-            width="45" /><img src="images/instagram logo.png" width="45"
-        /></a>
+  <div class="produtosPromocao row">
+
+    <div class="card cardProduto col" style="width: 18rem;">
+      <img class="card-img-top" src="images/xbox-one-x.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Video Game Xbox One X</h5>
+        <p class="card-text">R$999,99</p>
+        <a href="#" class="btn btn-success">Comprar</a>
       </div>
-    </footer>
-  </body>
-</html>
+    </div>
+
+    <div class="card cardProduto col " style="width: 18rem;">
+      <img class="card-img-top" src="images/xbox-one-x.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Video Game Xbox One X</h5>
+        <p class="card-text">R$999,99</p>
+        <a href="#" class="btn btn-success">Comprar</a>
+      </div>
+    </div>
+
+    <div class="card cardProduto col" style="width: 18rem;">
+      <img class="card-img-top" src="images/xbox-one-x.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Video Game Xbox One X</h5>
+        <p class="card-text">R$999,99</p>
+        <a href="#" class="btn btn-success">Comprar</a>
+      </div>
+    </div>
+
+    <div class="card cardProduto col" style="width: 18rem;">
+      <img class="card-img-top" src="images/xbox-one-x.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Video Game Xbox One X</h5>
+        <p class="card-text">R$999,99</p>
+        <a href="#" class="btn btn-success">Comprar</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="produtosPromocao row">
+
+    <div class="card cardProduto col" style="width: 18rem;">
+      <img class="card-img-top" src="images/ps4-pro.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Video Game PlayStation 4 Pro</h5>
+        <p class="card-text">R$999,99</p>
+        <a href="#" class="btn btn-success">Comprar</a>
+      </div>
+    </div>
+
+    <div class="card cardProduto col " style="width: 18rem;">
+      <img class="card-img-top" src="images/ps4-pro.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Video Game PlayStation 4 Pro</h5>
+        <p class="card-text">R$999,99</p>
+        <a href="#" class="btn btn-success">Comprar</a>
+      </div>
+    </div>
+
+    <div class="card cardProduto col" style="width: 18rem;">
+      <img class="card-img-top" src="images/ps4-pro.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Video Game PlayStation 4 Pro</h5>
+        <p class="card-text">R$999,99</p>
+        <a href="#" class="btn btn-success">Comprar</a>
+      </div>
+    </div>
+
+    <div class="card cardProduto col" style="width: 18rem;">
+      <img class="card-img-top" src="images/ps4-pro.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Video Game PlayStation 4 Pro</h5>
+        <p class="card-text">R$999,99</p>
+        <a href="#" class="btn btn-success">Comprar</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  </main>
+
+<%- include('partials/footer'); -%>

@@ -47,6 +47,7 @@ p {
 #hamburguer-menu {
   position: fixed;
   left: 13px;
+  z-index: 10;
 }
 
 .dropdown-menu {
@@ -167,6 +168,22 @@ p {
   justify-content: space-between;
 }
 
+/* CARDS PROMOÇÃO*/
+.cardProduto{
+  text-align: center;
+  margin: 10px;
+}
+
+.card-body{
+  padding: 10px 0 10px 0;
+}
+.card-title{
+  font-size: 20px;
+}
+
+
+
+
 /* Parte de responsividade,  320px */
 
 /* Header */
@@ -176,7 +193,7 @@ p {
     height: 30px;
     width: 30px;
     margin-left: -10px;
-    /* z-index: 1; */
+    z-index: 1;
     /* position: relative; */
   }
 
