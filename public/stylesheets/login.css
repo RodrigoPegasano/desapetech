@@ -1,7 +1,24 @@
-.formulario{
-    
-    display: grid;
-    justify-content: center;
+.formulario{   
     align-items: center;
-
+    flex-direction: column;
 }
+
+.inputPrincipal{
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.botaoLogin{
+    width: 40%;
+    border-radius: 5px;
+}
+
+p{
+    margin: 0;
+}
+
+input, p, button {
+    margin-bottom: 10px;
+}
+
+
