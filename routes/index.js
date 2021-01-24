@@ -17,4 +17,24 @@ router.get('/login', function(req, res, next) {
   res.render('login', { title: 'Login' });
 });
 
+/* Rota cadastrar */
+router.get('/novoUsuario', function(req, res, next) {
+  res.render('novoUsuario', { title: 'Cadastrar Usuario' });
+});
+
+/* Rota cadastro OK */
+router.get('/cadastrook', function(req, res, next) {
+  res.render('cadastroOK', { title: 'Cadastro OK' });
+});
+
+/* Rota Recuperação Senha */
+router.get('/recuperacaosenha', function(req, res, next) {
+  res.render('recuperacaoSenha', { title: 'Recuperacao Senha' });
+});
+
+/* Rota Recuperação OK */
+router.get('/recuperacaook', function(req, res, next) {
+  res.render('recuperacaook', { title: 'Recuperacao Senha OK' });
+});
+
 module.exports = router;
