@@ -1,6 +1,7 @@
 <%- include('partials/head'); -%>
-    <%- include('partials/header'); -%>
-        <p class="text-left" id="tituloPrincipalCadastroUsuario">Preencha seu endereço</p>
+    <%- include('partials/header2'); -%>
+
+        <p class="tituloPrincipalCadastroUsuario">Preencha seu endereço</p>
         <br>
 
         <form action="">
@@ -39,7 +40,7 @@
                 </div>
             </div>
             <br>
-            <p class="text-left" id="tituloPrincipalCadastroUsuario">Preencha seus dados pessoais</p>
+            <p class="tituloPrincipalCadastroUsuario">Preencha seus dados pessoais</p>
             <br>
             <div class="form-row">
                 <div class="form col-md-6">
@@ -74,9 +75,13 @@
                     <input type="text" name="confirmeCelular" id="confirmeCelular" placeholder="Confirme o telefone" class="form-control">
                 </div>
             </div>
-        <a href="/cadastrook" class="btn btn-primary">Enviar</a>
+
+            <div class="form-row" id="enviarNovoUsuario">
+                <a  href="/cadastrook" class="btn btn-primary">Enviar</a>
+
+            </div>
             
-            <!-- <input type="text" class="form-control inputTeste"> -->
+            
 
         </form>
         
