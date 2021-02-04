@@ -2,26 +2,53 @@
 <%- include('partials/header2'); -%>
 
 <div class="container">
-    <div class="row">
-      <div id="tituloPrincipalCarrinho" class="col text-center">
-        <p>Carrinho de Compras</p>
-      </div>
-    </div>
+    <p class="tituloPrincipalDaPagina">Carrinho de Compras</p>
 
 <%- include('partials/produtoCarrinho'); -%>
 <%- include('partials/produtoCarrinho'); -%>
 <%- include('partials/produtoCarrinho'); -%>
 <%- include('partials/produtoCarrinho'); -%>
     
-<div class="botaoFinalizarPedidoCarrinho">
-    <p>Valor dos produtos: <b>R$999,99</b></p>
-    <p>Valor dos Frete: <b>R$99,99</b></p>
-    <h5>Total: <b>R$99,99</b></h5>
-    <a href="/pagamento">
-        <button type="button" class="btn btn-success">Finalizar Pedido</button>
-    </a>
-</div>
+<div class="row">
+    <div class="col">
+        <div class="botaoEnderecoCarrinho">
+            <h6>Endereço:</h6>
+            <p>Rua Victório Santim, 3086.</p>
+            <p>Torre C, Apartamento 502</p>
+            <p>CEP: 08290-001</p>
+            <p>Vila Carmosina</p>
+            <p>São Paulo - SP</p>
+            <a href="/alterarEndereco">
+                <button type="button" class="btn btn-info">Alterar Endereço</button>
+            </a>
+        </div>
+    </div>
 
+    <div class="col">
+        <div class="botaoEnderecoCarrinho">
+            <h6>Destinatário:</h6>
+            <p>Eduardo de Santana Ferreira</p>
+            <p>(11) 96313-7376</p>
+            <p>edusf0@hotmail.com</p>
+            
+            <a href="/alterarDadosPessoais">
+                <button type="button" class="btn btn-info">Alterar Dados Pessoais</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="botaoFinalizarPedidoCarrinho">
+            <p>Valores do Pedido</p>
+            <p>Valor dos produtos: <b>R$999,99</b></p>
+            <p>Valor dos Frete: <b>R$99,99</b></p>
+            <h5>Total: <b>R$99,99</b></h5>
+            <a href="/pagamento">
+                <button type="button" class="btn btn-success">Finalizar Pedido</button>
+            </a>
+        </div>
+    </div>
+</div>
 
 </div>
 

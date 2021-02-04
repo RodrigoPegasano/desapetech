@@ -1,0 +1,52 @@
+<%- include('partials/head'); -%>
+<%- include('partials/header2'); -%>
+        <div class="container">
+
+        <form action="">
+
+            <p class="tituloPrincipalDaPagina">Preencha seus dados pessoais</p>
+            <br>
+            <div class="form-row">
+                <div class="form col-md-6">
+                    <input type="text" name="email" id="email" placeholder="Email" class="form-control">
+                </div>
+                <div class="form col-md-6">
+                    <input type="text" name="confirmaEmail" id="confirmaEmail" placeholder="Confirme o Email" class="form-control">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form col-md-6">
+                    <input type="text" name="nome" id="nome" placeholder="Nome" class="form-control">
+                </div>
+                <div class="form col-md-6">
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" class="form-control">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form col-md-3">
+                    <input type="text" name="rg" id="rg" placeholder="RG" class="form-control">
+                </div>
+                <div class="form-row col-md-3">
+                    <input type="text" name="cpf" id="cpf" placeholder="CPF" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form col-md-3">
+                    <input type="text" name="celular" id="celular" placeholder="Celular" class="form-control">
+                </div>
+                <div class="form col-md-3">
+                    <input type="text" name="confirmeCelular" id="confirmeCelular" placeholder="Confirme o telefone" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-row" id="enviarNovoUsuario">
+                <a  href="/carrinho" class="btn btn-success">Atualizar</a>
+
+            </div>
+            
+            
+
+        </form>
+    </div>
+<%- include('partials/footer'); -%>

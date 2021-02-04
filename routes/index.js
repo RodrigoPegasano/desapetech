@@ -47,4 +47,14 @@ router.get('/pagamento', function(req, res, next) {
   res.render('pagamento', { title: 'Pagamento' });
 });
 
+/* Rota Alterar Endereço */
+router.get('/alterarEndereco', function(req, res, next) {
+  res.render('alterarEndereco', { title: 'Alterar Endereço' });
+});
+
+/* Rota Alterar Dados Pessoais */
+router.get('/alterarDadosPessoais', function(req, res, next) {
+  res.render('alterarDadosPessoais', { title: 'Alterar Dados Pessoais' });
+});
+
 module.exports = router;

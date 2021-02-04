@@ -192,3 +192,14 @@ p {
   margin-right: 25px;
   margin-left: 25px;
 }
+
+.tituloPrincipalDaPagina{
+  font-weight: bold;
+    font-size: 25px;
+    padding: 10px 0;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-color: #D2D2D2;
+    border-radius: 5px;
+    text-align: center;
+}

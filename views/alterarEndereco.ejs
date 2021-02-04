@@ -1,0 +1,48 @@
+<%- include('partials/head'); -%>
+<%- include('partials/header2'); -%>
+
+<div class="container">
+<p class="text-center tituloPrincipalDaPagina" >Alterar endereço</p>
+    <form action="">
+        <div class="form-row">
+            <div class=" form col-md-2">
+                <input type="text" class="form-control" name="cep" id="cep" placeholder="CEP (00000-000)">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form col-md-8">
+                <input type="text" placeholder="Endereço" class="form-control">
+            </div>
+            <div class="form col-md-4">
+                <input type="text" placeholder="Número" class="form-control ">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form col-md-12">
+                <input type="text" placeholder="Complemento" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form col-md-5">
+                <input type="text" name="bairro" id="bairro" placeholder="Bairro" class="form-control">
+            </div>
+
+            <div class="form col-md-5">
+                <input type="text" name="cidade" id="cidade" placeholder="Cidade" class="form-control">
+            </div>
+
+            <div class="form col-md-2">
+                <input type="text" name="estado" id="estado" placeholder="Estado" class="form-control">
+            </div>
+        </div>
+        <br>
+        </form>
+        <a href="/carrinho">
+            <button type="button" class="btn btn-success">Atualizar Endereço</button>
+        </a>
+    </div>
+
+<%- include('partials/footer'); -%>
