@@ -187,3 +187,8 @@ p {
 .card-title{
   font-size: 20px;
 }
+
+.produtosPromocao{
+  margin-right: 25px;
+  margin-left: 25px;
+}
