@@ -1,0 +1,21 @@
+#tituloPrincipalCarrinho{
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-color: #D2D2D2;
+    border-radius: 5px;
+}
+
+.textoProdutoCarrinho{
+    text-align: right !important;
+}
+
+.imagemProdutoCarrinho{
+    height: 140px;
+}
+
+.botaoFinalizarPedidoCarrinho{
+    text-align: right !important;
+}

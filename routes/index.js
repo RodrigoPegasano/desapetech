@@ -37,4 +37,9 @@ router.get('/recuperacaook', function(req, res, next) {
   res.render('recuperacaook', { title: 'Recuperacao Senha OK' });
 });
 
+/* Rota Carrinho */
+router.get('/carrinho', function(req, res, next) {
+  res.render('carrinho', { title: 'Carrinho' });
+});
+
 module.exports = router;
