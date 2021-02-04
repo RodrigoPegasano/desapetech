@@ -1,52 +1,48 @@
 <%- include('partials/head'); -%>
-<%- include('partials/header2'); -%>
+  <%- include('partials/header2'); -%>
 
-<div class="container">
-    <div class="row">
-      <div id="tituloPrincipalCarrinho" class="col text-center">
-        <p>Pagamento</p>
-      </div>   
+    <div class="container">
+      <div class="row">
+        <div id="tituloPrincipalCarrinho" class="col text-center">
+          <p>Pagamento</p>
+        </div>
+      </div>
+      <p class="text-center">Escolha um metodo de pagamento</p>
+
+      <div class="row">
+        <div class="col-4">
+          <div class="card">
+            <img class="card-img-top" src="images/boleto-icone.png" alt="Card image cap">
+            <div class="card-body cardPagamento">
+              <h5 class="card-title">Boleto Bancário</h5>
+              <p class="card-text">Vencimento em até 3 dias úteis.</p>
+              <a href="#" class="btn btn-success">Gerar Boleto</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card ">
+            <img class="card-img-top" src="images/pix.png" alt="Card image cap">
+            <div class="card-body cardPagamento ">
+              <h5 class="card-title ">Pix</h5>
+              <p class="card-text">Pague com Pix instantaneamente.</p>
+              <a href="#" class="btn btn-success">Pix</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card">
+            <img class="card-img-top" src="images/credit-card.png" alt="Card image cap">
+            <div class="card-body cardPagamento">
+              <h5 class="card-title">Cartão de Crédito</h5>
+              <p class="card-text">Pague em até 12x sem juros.</p>
+              <a href="#" class="btn btn-success">Pagar com Cartão</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <p class="text-center">Escolha um metodo de pagamento</p>   
 
-    <div class="row">
-      <div class="card text-center col-3" >
-        <img class="card-img-top" src="images/boleto-icone.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Boleto Bancário</h5>
-          <p class="card-text">Boleto bancário com vencimento em até 3 dias úteis</p>
-          <a href="#" class="btn btn-primary">Gerar Boleto</a>
-        </div>
-        
-      </div>
-      <div class="col-1"></div>
-
-      
-      <div class="card text-center col-3">
-        <img class="card-img-top" src="images/boleto-icone.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Boleto Bancário</h5>
-          <p class="card-text">Boleto bancário com vencimento em até 3 dias úteis</p>
-          <a href="#" class="btn btn-primary">Gerar Boleto</a>
-        </div>
-      </div>
-      <div class="col-1"></div>
-      
-      <div class="card text-center col-3">
-        <img class="card-img-top" src="images/boleto-icone.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Boleto Bancário</h5>
-          <p class="card-text">Boleto bancário com vencimento em até 3 dias úteis</p>
-          <a href="#" class="btn btn-primary">Gerar Boleto</a>
-        </div>
-      </div>
-      <div class="col-1"></div>
-
-
-    </div>
-</div>
-<!-- <div class="botaoFinalizarPedidoCarrinho">
-    <button type="button" class="btn btn-success ">Pagar</button>
-</div> -->
-
-<%- include('partials/footer'); -%>
+    <%- include('partials/footer'); -%>
