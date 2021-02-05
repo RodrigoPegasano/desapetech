@@ -11,10 +11,10 @@
                 </div>
 
                 <div class="form-row">
-                    <div class="form col-md-8">
+                    <div class="form col-md-10">
                         <input type="text" placeholder="Endereço" class="form-control">
                     </div>
-                    <div class="form col-md-4">
+                    <div class="form col-md-2">
                         <input type="text" placeholder="Número" class="form-control ">
                     </div>
                 </div>
@@ -62,12 +62,9 @@
                     <div class="form col-md-3">
                         <input type="text" name="rg" id="rg" placeholder="RG" class="form-control">
                     </div>
-                    <div class="form-row col-md-3">
+                    <div class="form col-md-3">
                         <input type="text" name="cpf" id="cpf" placeholder="CPF" class="form-control">
                     </div>
-                </div>
-
-                <div class="form-row">
                     <div class="form col-md-3">
                         <input type="text" name="celular" id="celular" placeholder="Celular" class="form-control">
                     </div>
@@ -77,14 +74,58 @@
                     </div>
                 </div>
 
-                <div class="form-row" id="enviarNovoUsuario">
-                    <a href="/cadastrook" class="btn btn-primary">Enviar</a>
-
+                <div class="form-row">
+                    <div class="form col-md-3">
+                        <input type="password" name="senha" id="senha" placeholder="Senha" class="form-control">
+                    </div>
+                    <div class="form col-md-3">
+                        <input type="password" name="confirmaSenha" id="confirmaSenha" placeholder="Confirme a senha"
+                            class="form-control">
+                    </div>
                 </div>
 
+                <div class="form-row">
+                    <!-- parte do modal -->
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary form-row" data-toggle="modal"
+                        data-target="#exampleModalCenter">
+                        Enviar
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="container text-center">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Novo Usuário</h5>
+                                    </div>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <p class="tituloPrincipalDaPagina">Cadastro Realizado com sucesso!</p>
+                                        <img class="mx-auto d-block" src="/images/sucess.png" alt="" height="150px">
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form col-md-3">
+                                        <div class="modal-footer">
+                                            <a href="/login">
+                                                <button type="button" class="btn btn-primary">Enviar</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
-
-
 
         <%- include('partials/footer'); -%>

@@ -10,3 +10,7 @@ p.tituloPrincipalCadastroUsuario{
     align-items: center;
     display: flex;
 }
+
+#exampleModalLongTitle{
+    text-align: center;
+}
