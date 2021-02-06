@@ -57,4 +57,9 @@ router.get('/alterarDadosPessoais', function(req, res, next) {
   res.render('alterarDadosPessoais', { title: 'Alterar Dados Pessoais' });
 });
 
+/* Rota Usuário Logado */
+router.get('/usuarioLogado', function(req, res, next) {
+  res.render('usuarioLogado', { title: 'Usuário Logado' });
+});
+
 module.exports = router;

@@ -199,7 +199,8 @@ p {
     padding: 10px 0;
     margin-top: 10px;
     margin-bottom: 15px;
-    background-color: #D2D2D2;
+    /* background-color: #D2D2D2; f7b46d*/
+    background-color: #f7b46d;
     border-radius: 5px;
     text-align: center;
 }

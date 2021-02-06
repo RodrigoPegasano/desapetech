@@ -1,26 +1,30 @@
 <%- include('partials/head'); -%>
-<%- include('partials/header2'); -%>
+    <%- include('partials/header2'); -%>
 
-<div class="row formulario">
-    <img src="images/login-pagina.png" alt="">
-    <input class="inputPrincipal" type="text" placeholder="usuario">
-    <input class="inputPrincipal" type="text" placeholder="senha">
-    <div class="row">
-        <input type="checkbox" name="lembrarme" id="lembrarme">
-        <label for="lembrarme">Lembrar-me</label>
-    </div>
-    <button class="btn btn-primary">Entrar</button>
-    <a href="/recuperacaoSenha">Esqueci a senha</a>
-    <a href="/novoUsuario">Criar conta</a>
-    <p>Acessar com:</p>
-    <button  class="btn btn-link ">
-        <img class="botaoLogin" src="images/login-facebook.png" alt="">
-    </button>
-    
-    <button  class="btn btn-link ">
-        <img class="botaoLogin" src="images/login-google.png" alt="">
-    </button>
-</div>
+        <div class="row formulario">
+            <img src="images/login-pagina.png" alt="">
+            <label >Usuário</label>
+            <input class="inputPrincipal" type="text" placeholder="usuário">
+            <label >Senha</label>
+            <input class="inputPrincipal" type="password" placeholder="senha">
+
+            <div class="row">
+                <input type="checkbox" name="lembrarme" id="lembrarme">
+                <label for="lembrarme">Lembrar-me</label>
+            </div>
+            <a href="/usuariologado" class="btn btn-primary">Entrar</a>
+            <!-- <button class="btn btn-primary" href="">Entrar</button> -->
+            <a href="/recuperacaoSenha">Esqueci a senha</a>
+            <a href="/novoUsuario">Criar conta</a>
+            <p>Acessar com:</p>
+            <button class="btn btn-link ">
+                <img class="botaoLogin" src="images/login-facebook.png" alt="">
+            </button>
+
+            <button class="btn btn-link">
+                <img class="botaoLogin" src="images/login-google.png" alt="">
+            </button>
+        </div>
 
 
-<%- include('partials/footer'); -%>
+        <%- include('partials/footer'); -%>
