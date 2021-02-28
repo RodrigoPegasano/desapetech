@@ -6,24 +6,15 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-module.exports = router;
-
-
-
 /* Rota cadastro OK */
-router.get('/cadastrook', function(req, res, next) {
-  res.render('cadastroOK', { title: 'Cadastro OK' });
-});
-
-/* Rota Recuperação Senha */
-router.get('/recuperacaosenha', function(req, res, next) {
-  res.render('recuperacaoSenha', { title: 'Recuperacao Senha' });
-});
+// router.get('/cadastrook', function(req, res, next) {
+//   res.render('cadastroOK', { title: 'Cadastro OK' });
+// });
 
 /* Rota Recuperação OK */
-router.get('/recuperacaook', function(req, res, next) {
-  res.render('recuperacaook', { title: 'Recuperacao Senha OK' });
-});
+// router.get('/recuperacaook', function(req, res, next) {
+//   res.render('recuperacaook', { title: 'Recuperacao Senha OK' });
+// });
 
 /* Rota Carrinho */
 router.get('/carrinho', function(req, res, next) {
@@ -50,3 +41,4 @@ router.get('/usuarioLogado', function(req, res, next) {
   res.render('usuarioLogado', { title: 'Usuário Logado' });
 });
 
+module.exports = router;
