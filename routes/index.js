@@ -17,11 +17,6 @@ router.get('/', function(req, res, next) {
 // });
 
 
-/* Rota Alterar Dados Pessoais */
-router.get('/alterarDadosPessoais', function(req, res, next) {
-  res.render('alterarDadosPessoais', { title: 'Alterar Dados Pessoais' });
-});
-
 /* Rota Usuário Logado */
 router.get('/usuarioLogado', function(req, res, next) {
   res.render('usuarioLogado', { title: 'Usuário Logado' });
