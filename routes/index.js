@@ -6,21 +6,9 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+module.exports = router;
 
-/* Rota Produto */
-router.get('/produto', function(req, res, next) {
-  res.render('produto', { title: 'Produto' });
-});
 
-/* Rota Login */
-router.get('/login', function(req, res, next) {
-  res.render('login', { title: 'Login' });
-});
-
-/* Rota cadastrar */
-router.get('/novoUsuario', function(req, res, next) {
-  res.render('novoUsuario', { title: 'Cadastrar Usuario' });
-});
 
 /* Rota cadastro OK */
 router.get('/cadastrook', function(req, res, next) {
@@ -62,4 +50,3 @@ router.get('/usuarioLogado', function(req, res, next) {
   res.render('usuarioLogado', { title: 'Usuário Logado' });
 });
 
-module.exports = router;
