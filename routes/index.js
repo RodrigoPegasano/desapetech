@@ -16,10 +16,7 @@ router.get('/', function(req, res, next) {
 //   res.render('recuperacaook', { title: 'Recuperacao Senha OK' });
 // });
 
-/* Rota Carrinho */
-router.get('/carrinho', function(req, res, next) {
-  res.render('carrinho', { title: 'Carrinho' });
-});
+
 
 /* Rota Pagamento */
 router.get('/pagamento', function(req, res, next) {
