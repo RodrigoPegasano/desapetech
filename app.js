@@ -16,6 +16,7 @@ var pagamentoRouter = require('./routes/pagamento');
 var alterarEnderecoRouter = require('./routes/alterarEndereco');
 var alterarDadosPessoaisRouter = require('./routes/alterarDadosPessoais');
 var usuarioLogadoRouter = require('./routes/usuarioLogado');
+var adicionarProdutoRouter = require('./routes/adicionarProduto');
 
 var app = express();
 
@@ -48,6 +49,7 @@ app.get('/pagamento', pagamentoRouter);
 app.get('/alterarEndereco', alterarEnderecoRouter);
 app.get('/alterarDadosPessoais', alterarDadosPessoaisRouter);
 app.get('/usuarioLogado', usuarioLogadoRouter);
+app.get('/adicionarProduto', adicionarProdutoRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

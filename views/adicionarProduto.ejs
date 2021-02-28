@@ -1,0 +1,31 @@
+<%- include('partials/head'); -%>
+    <%- include('partials/header2'); -%>
+
+        <div class="container">
+            <p class="tituloPrincipalDaPagina">Adicione o Produto</p>
+            <form action="">
+                <div class="form-row">
+                    <input type="text" class="form-control col-md-12" id="nomeProduto" placeholder="Nome do Produto">
+                </div>
+
+
+                <div class="form-row">
+                    <input type="text" class="form-control" placeholder="Preço">
+                </div>
+                <div class="form-row">
+                    <form action="/action_page.php">
+                        <label for="img">Imagem do produto:</label>
+                        <input type="file" id="img" name="img" accept="image/*">
+                        <!-- <input class="btn-sucess" type="submit"> -->
+                        <button type="button" class="btn btn-success">Success</button>
+                      </form>
+                </div>
+
+                <div class="form-row">
+                    <textarea name="" class="form-control" id="" cols="30" rows="10"
+                        placeholder="Descrição do Produto"></textarea>
+                </div>
+            </form>
+        </div>
+
+        <%- include('partials/footer'); -%>
