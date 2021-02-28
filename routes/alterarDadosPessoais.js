@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var router = require("./alterarEndereco");
+var alterarDadosPessoaisController = require('../controllers/alterarDadosPessoaisController')
 
 /* Rota Alterar Dados Pessoais */
 router.get('/alterarDadosPessoais', function (req, res, next) {

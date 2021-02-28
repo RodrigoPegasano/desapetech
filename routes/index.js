@@ -16,10 +16,4 @@ router.get('/', function(req, res, next) {
 //   res.render('recuperacaook', { title: 'Recuperacao Senha OK' });
 // });
 
-
-/* Rota Usuário Logado */
-router.get('/usuarioLogado', function(req, res, next) {
-  res.render('usuarioLogado', { title: 'Usuário Logado' });
-});
-
 module.exports = router;
