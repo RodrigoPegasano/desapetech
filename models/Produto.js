@@ -4,7 +4,7 @@ const { sequelize } = require(".");
 module.exports = (sequelize, DataTypes) => {
     const produto = sequelize.define('produto', {
         idProduto: {
-            type: DataType.INTEGER,
+            type: DataTypes.INTEGER,
             autoIncrement: true,
             primaryKey: true,
             allowNull: false
@@ -33,7 +33,7 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.BOOLEAN,
             allowNull: false
         },
-        timestamps: false,
+        
         tableName: "usuarios"
     });
     return Usuario;
