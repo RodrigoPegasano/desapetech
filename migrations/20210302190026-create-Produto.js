@@ -3,17 +3,18 @@
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     queryInterface.createTable('produtos',{
-      idProduto: {
+      id_produto: {
         type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true
       },
-      nomeProduto: Sequelize.STRING,
-      precoProduto: Sequelize.FLOAT,
-      quantidadeProduto: Sequelize.INTEGER,
-      imagemProduto: Sequelize.STRING,
-      descricaoProduto: Sequelize.STRING,
-      produtoAtivo: Sequelize.BOOLEAN
+      preco_produto: Sequelize.FLOAT,
+      quantidade_produto: Sequelize.INTEGER,
+      tipo_produto: Sequelize.STRING,
+      descricao_produto: Sequelize.STRING,
+      data_criacao_produto: Sequelize.DATE,
+      data_atualizacao_produto: Sequelize.DATE,
+      status_produto: Sequelize.INTEGER
     });
   },
 

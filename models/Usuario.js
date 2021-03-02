@@ -19,11 +19,11 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false
         },
         data_nascimento:{
-            type: DataTypes.INTEGER,
+            type: DataTypes.DATE,
             allowNull: false
         },
         sexo:{
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
             allowNull: false
         },
         data_criacao_usuario:{
