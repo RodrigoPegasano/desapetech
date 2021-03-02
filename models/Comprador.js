@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    const comprador = sequelize.define('comprador', {
+    const Comprador = sequelize.define('Comprador', {
         id_comprador: {
             type: DataTypes.INTEGER,
             autoIncrement: true,
@@ -8,10 +8,17 @@ module.exports = (sequelize, DataTypes) => {
         },status_comprador:{
             type: DataTypes.INTEGER            
         },fk_id_usuario:{
-
+            type:DataTypes.INTEGER,
         },
         timestamps: false,
-        tableName: "compradors"
+        tableName: "comprador"
     });
-    return comprador;
+
+    Comprador.associate = (listaDeModelos) =>{
+        Comprador.belongsTo(listaDeModelos.Usuario,{
+            foreignKey:'fk_id_usuario',
+            as:'usuario'
+        })
+    }
+    return Comprador;
 }

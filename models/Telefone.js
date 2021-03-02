@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    const telefone = sequelize.define('telefone', {
+    const Telefone = sequelize.define('Telefone', {
         id_telefone: {
             type: DataTypes.INTEGER,
             autoIncrement: true,
@@ -10,11 +10,17 @@ module.exports = (sequelize, DataTypes) => {
         },tel_residencial:{
             type: DataTypes.INTEGER            
         },fk_id_usuario:{
-            
-            
+            type:DataTypes.INTEGER,
         },
         timestamps: false,
-        tableName: "telefones"
+        tableName: "telefone"
     });
-    return telefone;
+
+    Telefone.associate = (listaDeModelos) =>{
+        Telefone.belongsTo(listaDeModelos.Usuario,{
+            foreignKey:'fk_id_usuario',
+            as:'usuario'
+        })
+    }
+    return Telefone;
 }
