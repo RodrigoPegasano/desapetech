@@ -2,15 +2,14 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    queryInterface.createTable('teste', {
-      teste12: {
-        type: Sequelize.INTEGER}
+    queryInterface.createTable('', {
+      
     })
 
   },
 
   down: async (queryInterface, Sequelize) => {
-    queryInterface.dropTable('teste');
+    queryInterface.dropTable('');
     
   }
 };
