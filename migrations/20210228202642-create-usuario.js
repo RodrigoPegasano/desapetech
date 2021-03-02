@@ -4,20 +4,20 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
     queryInterface.createTable('usuarios',{
       idUsuario: {
-        type: Sequelize.INTERGER,
+        type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true
       },
       emailUsuario: Sequelize.STRING,
       nomeUsuario: Sequelize.STRING,
       nomeSobreUsuario: Sequelize.STRING,
-      rgUsuario: Sequelize.INTERGER,
-      cpfUsuario: Sequelize.INTERGER,
-      celularUsuario: Sequelize.INTERGER,
+      rgUsuario: Sequelize.INTEGER,
+      cpfUsuario: Sequelize.INTEGER,
+      celularUsuario: Sequelize.INTEGER,
       senhaUsuario: Sequelize.STRING,
-      cepUsuario: Sequelize.INTERGER,
+      cepUsuario: Sequelize.INTEGER,
       enderecoUsuario: Sequelize.STRING,
-      numeroEnderecoUsuario: Sequelize.INTERGER,
+      numeroEnderecoUsuario: Sequelize.INTEGER,
       complementoEnderecoUsuario: Sequelize.STRING,
       bairroEnderecoUsuario: Sequelize.STRING,
       cidadeEnderecoUsuario: Sequelize.STRING,

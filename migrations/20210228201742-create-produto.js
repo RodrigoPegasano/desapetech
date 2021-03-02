@@ -4,13 +4,13 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
     queryInterface.createTable('produtos',{
       idProduto: {
-        type: Sequelize.INTERGER,
+        type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true
       },
       nomeProduto: Sequelize.STRING,
       precoProduto: Sequelize.FLOAT,
-      quantidadeProduto: Sequelize.INTERGER,
+      quantidadeProduto: Sequelize.INTEGER,
       imagemProduto: Sequelize.STRING,
       descricaoProduto: Sequelize.STRING,
       produtoAtivo: Sequelize.BOOLEAN
