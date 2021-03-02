@@ -1,63 +1,40 @@
 module.exports = (sequelize, DataTypes) => {
     const usuario = sequelize.define('usuario', {
-        idUsuario: {
+        id_usuario: {
             type: DataTypes.INTEGER,
             autoIncrement: true,
             primaryKey: true,
             allowNull: false
         },
-        emailUsuario:{
+        nome:{
             type: DataTypes.STRING,
             allowNull: false
         },
-        nomeUsuario:{
+        sobrenome:{
             type: DataTypes.STRING,
             allowNull: false
         },
-        nomeUsuarioSobrenome:{
+        email:{
             type: DataTypes.STRING,
             allowNull: false
         },
-        rgUsuario:{
+        data_nascimento:{
             type: DataTypes.INTEGER,
             allowNull: false
         },
-        cpfUsuario:{
+        sexo:{
             type: DataTypes.INTEGER,
             allowNull: false
         },
-        celularUsuario:{
+        data_criacao_usuario:{
+            type: DataTypes.INTEGER,
+            allowNull: false
+        },
+        data_atualizacao_usuario:{
             type: DataTypes.INTEGER,
             allowNull: false
         },
         senhaUsuario:{
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        cepUsuario:{
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        enderecoUsuario:{
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        numeroEnderecoUsuario:{
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        complementoEnderecoUsuario:{
-            type: DataTypes.STRING
-        },
-        bairroEnderecoUsuario:{
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        cidadeEnderecoUsuario:{
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        estadoEnderecoUsuario:{
             type: DataTypes.STRING,
             allowNull: false
         },
