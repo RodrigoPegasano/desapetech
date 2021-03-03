@@ -2,8 +2,17 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    queryInterface.createTable('Usuario_has_endereco', {
-      fk_id_usuario: {
+    queryInterface.createTable('cartoes_has_usuario', {
+      fk_id_cartoes: {
+        type: Sequelize.INTEGER,
+        references: {
+          model:'Cartoes',
+          key:'id_cartao'
+        },
+        onUpdate: 'CASCADE',
+        onDelete: 'CASCADE'
+    },
+    fk_id_usuario:{
         type: Sequelize.INTEGER,
         references: {
           model:'Usuario',
@@ -11,21 +20,12 @@ module.exports = {
         },
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE'
-    },
-    fk_id_endereco:{
-        type: Sequelize.INTEGER,
-        references: {
-          model:'Endereco',
-          key:'id_endereco'
-        },
-        onUpdate: 'CASCADE',
-        onDelete: 'CASCADE'      
     }
     })
   },
 
   down: async (queryInterface, Sequelize) => {
-    queryInterface.dropTable('Usuario_has_endereco');
+    queryInterface.dropTable('cartoes_has_usuario');
 
   }
 };

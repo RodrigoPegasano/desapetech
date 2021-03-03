@@ -2,7 +2,7 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    queryInterface.createTable('pedido', {
+    queryInterface.createTable('pedidos', {
       id_pedido: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
@@ -15,24 +15,28 @@ module.exports = {
     data_atualizacao_pedido:{
         type: Sequelize.DATE            
     },
-    status_pedido:{
+    status_do_pedido:{
         type:Sequelize.STRING,
     },
     numero_pedido:{
         type:Sequelize.INTEGER,
     },
     fk_id_usuario:{
-        type:Sequelize.INTEGER,
+      type:Sequelize.INTEGER,
+      references:{
+        model: 'Usuario',
+        key: 'id_usuario'
+      },
+      onUpdate: 'CASCADE',
+      onDelete: 'CASCADE'
     },
-    fk_id_status_pedido:{
-        type:Sequelize.INTEGER,
-    }
+
     })
 
   },
 
   down: async (queryInterface, Sequelize) => {
-    queryInterface.dropTable('pedido');
+    queryInterface.dropTable('pedidos');
     
   }
 };

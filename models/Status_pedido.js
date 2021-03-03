@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    const status_pedido = sequelize.define('status_pedido', {
+    const Status_pedido = sequelize.define('status_pedido', {
         id_status_pedido: {
             type: DataTypes.INTEGER,
             autoIncrement: true,
@@ -29,11 +29,5 @@ module.exports = (sequelize, DataTypes) => {
         tableName: "status_pedido"
     });
 
-    // Telefone.associate = (listaDeModelos) =>{
-    //     Telefone.belongsTo(listaDeModelos.Usuario,{
-    //         foreignKey:'fk_id_usuario',
-    //         as:'usuario'
-    //     })
-    // }
-    return status_pedido;
+    return Status_pedido;
 }

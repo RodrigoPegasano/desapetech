@@ -23,7 +23,7 @@ module.exports = {
     },cidade_endereco:{
         type: Sequelize.STRING                       
     }
-    })
+    });
 
   },
 

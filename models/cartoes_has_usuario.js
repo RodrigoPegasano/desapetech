@@ -6,8 +6,8 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.INTEGER
         },
         timestamps: false,
-        tableName: "cartoes_has_usuarios"
-    });
+        tableName: "cartoes_has_usuario"
+    })
 
     cartoes_has_usuario.associate = (listaDeModelos) =>{
         cartoes_has_usuario.belongsTo(listaDeModelos.Usuario,{

@@ -1,27 +1,27 @@
 module.exports = (sequelize, DataTypes) => {
-    const usuario_has_endereco = sequelize.define('usuario_has_endereco', {
+    const Usuario_has_endereco = sequelize.define('usuario_has_endereco', {
         fk_id_usuario: {
             type: DataTypes.INTEGER
         },fk_id_endereco:{
             type: DataTypes.INTEGER            
         },
         timestamps: false,
-        tableName: "usuario_has_enderecos"
-    });
+        tableName: "usuario_has_endereco"
+    })
 
-    usuario_has_endereco.associate = (listaDeModelos) =>{
-        usuario_has_endereco.belongsTo(listaDeModelos.Usuario,{
+    Usuario_has_endereco.associate = (listaDeModelos) =>{
+        Usuario_has_endereco.belongsTo(listaDeModelos.Usuario,{
             foreignKey:'fk_id_usuario',
             as:'usuario'
         })
     }
 
-    usuario_has_endereco.associate = (listaDeModelos) =>{
-        usuario_has_endereco.belongsTo(listaDeModelos.Endereco,{
+    Usuario_has_endereco.associate = (listaDeModelos) =>{
+        Usuario_has_endereco.belongsTo(listaDeModelos.Endereco,{
             foreignKey:'fk_id_endereco',
             as:'endereco'
         })
     }
 
-    return usuario_has_endereco;
+    return Usuario_has_endereco;
 }

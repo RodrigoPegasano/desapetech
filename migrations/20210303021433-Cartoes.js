@@ -23,7 +23,7 @@ module.exports = {
     },status_cartao:{
         type: Sequelize.INTEGER
     }
-    })
+    });
   },
 
   down: async (queryInterface, Sequelize) => {

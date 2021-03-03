@@ -11,7 +11,13 @@ module.exports = {
       }, status_vendedor: {
         type: Sequelize.INTEGER
       }, fk_id_usuario: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references:{
+          model: 'Usuario',
+          key: 'id_usuario'
+        },
+        onUpdate: 'CASCADE',
+        onDelete: 'CASCADE'
       }
     })
 

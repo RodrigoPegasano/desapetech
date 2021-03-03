@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    const Vendedor = sequelize.define('Vendedor', {
+    const Vendedor = sequelize.define('vendedor', {
         id_vendedor: {
             type: DataTypes.INTEGER,
             autoIncrement: true,
@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
         },status_vendedor:{
             type: DataTypes.INTEGER            
         },fk_id_usuario:{
-
+            type: DataTypes.INTEGER
         },
         timestamps: false,
         tableName: "vendedor"

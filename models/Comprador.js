@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
         },
         timestamps: false,
         tableName: "comprador"
-    });
+    })
 
     Comprador.associate = (listaDeModelos) =>{
         Comprador.belongsTo(listaDeModelos.Usuario,{

@@ -16,13 +16,13 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING
         },
         fk_id_usuario:{
-            type: DataTypes.INTEGER
+            type: DataTypes.INTEGER,
         },
         fk_id_status_venda:{
-            type: DataTypes.INTEGER
+            type: DataTypes.INTEGER,
         },
         timestamps: false,
-        tableName: "Venda"
+        tableName: "venda"
     });
 
     Venda.associate = (listaDeModelos) =>{

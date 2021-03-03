@@ -27,7 +27,7 @@ module.exports = {
     num_regiao_envio:{
         type:Sequelize.INTEGER,
     },
-    })
+    });
 
   },
 

@@ -38,8 +38,8 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false
         },
-        timestamps: false,
-        tableName: "usuarios"
+        timestamps: true,
+        tableName: "usuario"
     });
     return usuario;
 }

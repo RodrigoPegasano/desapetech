@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    const Pedido = sequelize.define('Pedido', {
+    const Pedido = sequelize.define('pedidos', {
         id_pedido: {
             type: sequelize.INTEGER,
             autoIncrement: true,
@@ -12,20 +12,18 @@ module.exports = (sequelize, DataTypes) => {
         data_atualizacao_pedido:{
             type: sequelize.DATE            
         },
-        status_pedido:{
+        status_do_pedido:{
             type:sequelize.STRING,
         },
         numero_pedido:{
             type:sequelize.INTEGER,
         },
         fk_id_usuario:{
-            type:sequelize.INTEGER,
+            type:DataTypes.INTEGER,
         },
-        fk_id_status_pedido:{
-            type:sequelize.INTEGER,
-        },
-        timestamps: false,
-        tableName: "pedido"
+        
+        timestamps: true,
+        tableName: "pedidos"
     });
 
     Pedido.associate = (listaDeModelos) =>{
@@ -35,11 +33,6 @@ module.exports = (sequelize, DataTypes) => {
         })
     }
 
-    Pedido.associate = (listaDeModelos) =>{
-        Pedido.belongsTo(listaDeModelos.Produto_has_pedido,{
-            foreignKey:'fk_id_status_pedido',
-            as:'id_status_pedido'
-        })
-    }
+    
     return Pedido;
 }
