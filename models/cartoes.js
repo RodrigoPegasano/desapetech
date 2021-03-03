@@ -20,8 +20,8 @@ module.exports = (sequelize, DataTypes) => {
         },status_cartao:{
             type: DataTypes.INTEGER
         },
-        timestamps: false,
-        tableName: "cartoess"
+        timestamps: true,
+        tableName: "cartoes"
     });
     return cartoes;
 }
