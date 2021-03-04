@@ -33,7 +33,7 @@ module.exports = (sequelize, DataTypes) => {
     }
 
     Venda.associate = (listaDeModelos) =>{
-        Venda.belongsTo(listaDeModelos.status_venda,{
+        Venda.belongsTo(listaDeModelos.Status_venda,{
             foreignKey:'fk_id_status_venda',
             as:'id_status_venda'
         })
