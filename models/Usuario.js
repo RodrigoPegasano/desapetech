@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    const usuario = sequelize.define('usuario', {
+    const Usuario = sequelize.define('usuario', {
         id_usuario: {
             type: DataTypes.INTEGER,
             autoIncrement: true,
@@ -41,5 +41,5 @@ module.exports = (sequelize, DataTypes) => {
         timestamps: true,
         tableName: "usuario"
     });
-    return usuario;
+    return Usuario;
 }

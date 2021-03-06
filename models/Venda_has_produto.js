@@ -16,29 +16,29 @@ module.exports = (sequelize, DataTypes) => {
         tableName: "venda"
     });
 
-    Venda.associate = (listaDeModelos) =>{
-        Venda.belongsTo(listaDeModelos.Venda,{
+    Venda_has_produto.associate = (listaDeModelos) =>{
+        Venda_has_produto.belongsTo(listaDeModelos.Venda,{
             foreignKey:'fk_id_venda',
             as:'id_venda'
         })
     }
 
-    Venda.associate = (listaDeModelos) =>{
-        Venda.belongsTo(listaDeModelos.Produto,{
+    Venda_has_produto.associate = (listaDeModelos) =>{
+        Venda_has_produto.belongsTo(listaDeModelos.Produto,{
             foreignKey:'fk_id_produto',
             as:'id_produto'
         })
     }
 
-    Venda.associate = (listaDeModelos) =>{
-        Venda.belongsTo(listaDeModelos.Usuario,{
+    Venda_has_produto.associate = (listaDeModelos) =>{
+        Venda_has_produto.belongsTo(listaDeModelos.Usuario,{
             foreignKey:'venda_fk_id_usuario',
             as:'fk_id_usuario'
         })
     }
 
-    Venda.associate = (listaDeModelos) =>{
-        Venda.belongsTo(listaDeModelos.Status_venda,{
+    Venda_has_produto.associate = (listaDeModelos) =>{
+        Venda_has_produto.belongsTo(listaDeModelos.Status_venda,{
             foreignKey:'venda_fk_id_status_venda',
             as:'fk_id_status_venda'
         })

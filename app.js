@@ -47,7 +47,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.get('/login', loginRouter);
-app.get('/novoUsuario', novoUsuarioRouter);
+app.use('/novoUsuario', novoUsuarioRouter);
 app.get('/produto', produtoRouter);
 app.get('/recuperacaoSenha', recuperacaoSenhaRouter);
 app.get('/carrinho', carrinhoRouter);

@@ -3,8 +3,8 @@ var router = express.Router();
 var novoUsuarioController = require('../controllers/novoUsuarioController')
 
 /* Rota cadastrar */
-router.get('/novoUsuario', function(req, res, next) {
-    res.render('novoUsuario', { title: 'Cadastrar Usuario' });
-  });
+router.get('/', novoUsuarioController.renderizar);
+
+router.post('/', novoUsuarioController.salvarDadosUsuario);
 
 module.exports = router;

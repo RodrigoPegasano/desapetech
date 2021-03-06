@@ -1,22 +1,22 @@
 module.exports = (sequelize, DataTypes) => {
     const Pedido = sequelize.define('pedidos', {
         id_pedido: {
-            type: sequelize.INTEGER,
+            type: DataTypes.INTEGER,
             autoIncrement: true,
             primaryKey: true,
             allowNull: false
         },
         data_solicitacao_pedido:{
-            type: sequelize.DATE            
+            type: DataTypes.DATE            
         },
         data_atualizacao_pedido:{
-            type: sequelize.DATE            
+            type: DataTypes.DATE            
         },
         status_do_pedido:{
-            type:sequelize.STRING,
+            type:DataTypes.STRING,
         },
         numero_pedido:{
-            type:sequelize.INTEGER,
+            type:DataTypes.INTEGER,
         },
         fk_id_usuario:{
             type:DataTypes.INTEGER,

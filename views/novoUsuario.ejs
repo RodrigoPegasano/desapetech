@@ -3,7 +3,7 @@
         <div class="container">
             <p class="tituloPrincipalDaPagina">Preencha seu endereço</p>
 
-            <form action="">
+            <form action="/novoUsuario" method="POST">
                 <div class="form-row">
                     <div class=" form col-md-2">
                         <input type="text" class="form-control" name="cep" id="cep" placeholder="CEP (00000-000)">
@@ -97,7 +97,7 @@
                     <!-- parte do modal -->
                     <!-- Button trigger modal -->
                     <div class="col-md-12">
-                        <button type="button" class="btn btn-primary form-row" data-toggle="modal"
+                        <button type="submit" class="btn btn-primary form-row" data-toggle="modal"
                         data-target="#exampleModalCenter">
                         Enviar
                     </button>
@@ -128,7 +128,7 @@
                                     <div class="form col-md-3">
                                         <div class="modal-footer">
                                             <a href="/login">
-                                                <button type="button" class="btn btn-primary">Enviar</button>
+                                                <button type="button" class="btn btn-success">Enviar</button>
                                             </a>
                                         </div>
                                     </div>
