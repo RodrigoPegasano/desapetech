@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    const Status_venda = sequelize.define('status_venda', {
+    const Status_venda = sequelize.define('Status_venda', {
         id_status_venda: {
             type: DataTypes.INTEGER,
             autoIncrement: true,

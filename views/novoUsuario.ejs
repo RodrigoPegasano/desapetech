@@ -6,36 +6,36 @@
             <form action="/novoUsuario" method="POST">
                 <div class="form-row">
                     <div class=" form col-md-2">
-                        <input type="text" class="form-control" name="cep" id="cep" placeholder="CEP (00000-000)">
+                        <input type="text" class="form-control" name="cep_endereco" id="cep_endereco" placeholder="CEP (00000-000)">
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form col-md-10">
-                        <input type="text" placeholder="Endereço" class="form-control">
-                    </div>
+                        <input type="text" name="endereco" id="endereco" placeholder="Endereço" class="form-control">
+                    </div> 
                     <div class="form col-md-2">
-                        <input type="text" placeholder="Número" class="form-control ">
+                        <input type="number" name="numero_endereco" id="numero_endereco" placeholder="Número" class="form-control ">
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form col-md-12">
-                        <input type="text" placeholder="Complemento" class="form-control">
+                        <input type="text" name="complemento_endereco" id="complemento_endereco" placeholder="Complemento" class="form-control">
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form col-md-5">
-                        <input type="text" name="bairro" id="bairro" placeholder="Bairro" class="form-control">
+                        <input type="text" name="bairro_endereco" id="bairro_endereco" placeholder="Bairro" class="form-control">
                     </div>
 
                     <div class="form col-md-5">
-                        <input type="text" name="cidade" id="cidade" placeholder="Cidade" class="form-control">
+                        <input type="text" name="cidade_endereco" id="cidade_endereco" placeholder="Cidade" class="form-control">
                     </div>
 
                     <div class="form col-md-2">
-                        <input type="text" name="estado" id="estado" placeholder="Estado" class="form-control">
+                        <input type="text" name="uf_endereco" id="uf_endereco" placeholder="Estado" class="form-control">
                     </div>
                 </div>
                 <br>
@@ -60,35 +60,35 @@
                 </div>
                 <div class="form-row">
                     <div class="form col-md-3">
-                        <input type="text" name="dataNascimento" id="dataNascimento" placeholder="Data de Nascimento" class="form-control">
+                        <input type="text" name="data_nascimento" id="data_nascimento" placeholder="Data de Nascimento" class="form-control">
                     </div>
                     <div class="form col-md-3">
                         <!-- <input type="radio" name="sexo" id="sexo" placeholder="Sexo" class="form-control"> -->
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadio1">Feminino</label>
+                            <input type="radio" id="customRadio1" name="sexo" class="custom-control-input">
+                            <label class="custom-control-label" for="feminino">Feminino</label>
                           </div>
                           <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadio2">Masculino</label>
+                            <input type="radio" id="customRadio2" name="sexo" class="custom-control-input">
+                            <label class="custom-control-label" for="masculino">Masculino</label>
                           </div>
                           
                     </div>
                     <div class="form col-md-3">
-                        <input type="text" name="celular" id="celular" placeholder="Celular" class="form-control">
+                        <input type="text" name="tel_celular" id="tel_celular" placeholder="Celular" class="form-control">
                     </div>
                     <div class="form col-md-3">
-                        <input type="text" name="telefone" id="telefone" placeholder="Telefone"
+                        <input type="text" name="tel_residencial" id="tel_residencial" placeholder="Telefone"
                             class="form-control">
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form col-md-3">
-                        <input type="password" name="senha" id="senha" placeholder="Senha" class="form-control">
+                        <input type="password" name="password" id="password" placeholder="Senha" class="form-control">
                     </div>
                     <div class="form col-md-3">
-                        <input type="password" name="confirmaSenha" id="confirmaSenha" placeholder="Confirme a senha"
+                        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirme a senha"
                             class="form-control">
                     </div>
                 </div>

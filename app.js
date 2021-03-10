@@ -49,6 +49,15 @@ app.use('/users', usersRouter);
 app.get('/login', loginRouter);
 app.use('/novoUsuario', novoUsuarioRouter);
 app.get('/produto', produtoRouter);
+
+app.get('/produto2', produtoRouter);
+app.get('/produto3', produtoRouter);
+app.get('/produto4', produtoRouter);
+app.get('/produto5', produtoRouter);
+app.get('/produto6', produtoRouter);
+app.get('/produto7', produtoRouter);
+app.get('/produto8', produtoRouter);
+
 app.get('/recuperacaoSenha', recuperacaoSenhaRouter);
 app.get('/carrinho', carrinhoRouter);
 app.get('/pagamento', pagamentoRouter);
