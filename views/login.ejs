@@ -1,30 +1,40 @@
 <%- include('partials/head'); -%>
     <%- include('partials/header2'); -%>
     <form action="/usuario/autenticar" method="POST">
-        <div class="row formulario loginTela">
-            <img src="images/login-pagina.png" alt="">
-            <label >Usuário</label>
-            <input class="inputPrincipal" type="text" placeholder="usuário">
-            <label >Senha</label>
-            <input class="inputPrincipal" type="password" placeholder="senha">
+        <div class="row formulario loginTela formLogin1Aut">
+            <form action="" method="post" class="">
 
-            <div class="row">
-                <input type="checkbox" name="lembrarme" id="lembrarme">
-                <label for="lembrarme">&nbspLembrar-me</label>
-            </div>
-            <a href="/usuariologado" class="btn btn-primary">Entrar</a>
-            <br>
-            <!-- <button class="btn btn-primary" href="">Entrar</button> -->
-            <a href="/recuperacaoSenha">Esqueci a senha</a>
-            <a href="/novoUsuario">Criar conta</a>
-            <!-- <p>Acessar com:</p>
-            <button class="btn btn-link ">
-                <img class="botaoLogin" src="images/login-facebook.png" alt="">
-            </button>
-
-            <button class="btn btn-link">
-                <img class="botaoLogin" src="images/login-google.png" alt="">
-            </button> -->
+                <img src="images/login-pagina.png" alt="">
+                
+                <label >Email</label>
+                <div class=" col-md-3">
+                    <input type="text" class="form-control" id="nomeProduto" placeholder="Email">
+                </div>
+                <!-- <input class="inputPrincipal" type="text" placeholder="usuário"> -->
+                <label >Senha</label>
+                <div class=" col-md-3">
+                    <input type="password" class="form-control" id="nomeProduto" placeholder="Senha">
+                </div>
+                <!-- <input class="inputPrincipal" type="password" placeholder="senha"> -->
+    
+                <div class="row">
+                    <input type="checkbox" name="lembrarme" id="lembrarme">
+                    <label for="lembrarme">&nbspLembrar-me</label>
+                </div>
+                <a href="/usuariologado" class="btn btn-primary">Entrar</a>
+                <br>
+                <!-- <button class="btn btn-primary" href="">Entrar</button> -->
+                <a href="/recuperacaoSenha">Esqueci a senha</a>
+                <a href="/novoUsuario">Criar conta</a>
+                <!-- <p>Acessar com:</p>
+                <button class="btn btn-link ">
+                    <img class="botaoLogin" src="images/login-facebook.png" alt="">
+                </button>
+    
+                <button class="btn btn-link">
+                    <img class="botaoLogin" src="images/login-google.png" alt="">
+                </button> -->
+            </form>
         </div>
         </form>
 
