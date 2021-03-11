@@ -14,3 +14,7 @@ p.tituloPrincipalCadastroUsuario{
 #exampleModalLongTitle{
     text-align: center;
 }
+
+.usuarioLogadoBottom{
+    margin-bottom: 50px;
+}

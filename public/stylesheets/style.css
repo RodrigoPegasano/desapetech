@@ -16,6 +16,7 @@ p {
   margin-bottom: 25px;
 }
 
+
 /* Topo */
 .cabecalhoNovo{
   background-color: #f77f00;
@@ -41,6 +42,7 @@ p {
   margin: 0 auto;
   /* align-items: center; */
   vertical-align: middle;
+  
 }
 
 #header-container {
@@ -163,16 +165,23 @@ p {
 /* Footer */
 
 .footer {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   background-color: #f77f00;
   text-align: center;
-  height: 65px;
+  position: absolute;
+  bottom: auto;
+  width: 100%;
+  
 }
 
 .footer-container {
-  margin: 10px;
   display: inline-flex;
   justify-content: space-between;
+  
+}
+
+.facebook{
+  margin-top: 15px;
 }
 
 /* CARDS PROMOÇÃO*/
@@ -204,3 +213,6 @@ p {
     border-radius: 5px;
     text-align: center;
 }
+
+
+

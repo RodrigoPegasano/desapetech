@@ -1,3 +1,7 @@
 .cardPagamento{
     text-align: center;
 }
+
+.pagamentoBottom{
+    padding-bottom: 15px;
+}
